@@ -99,7 +99,19 @@ class MealTableViewController: UITableViewController {
     }
     */
     
-     
+    // MARK: Actions
+    // MARK: Changed from web source
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+        if let viewController = sender.source as? ViewController, let meal = viewController.meal {
+            // Add a new meal
+            let newIndexPath = IndexPath(row: meals.count, section: 0)
+                
+            meals.append(meal)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
+    
+    
     // MARK: Private methods
     
     private func loadSampleMeals() {
