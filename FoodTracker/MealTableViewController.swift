@@ -141,9 +141,6 @@ class MealTableViewController: UITableViewController {
                 let newIndexPath = IndexPath(row: meals.count, section: 0)
                 meals.append(meal)
                 tableView.insertRows(at: [newIndexPath], with: .automatic)
-                
-            meals.append(meal)
-            tableView.insertRows(at: [newIndexPath], with: .automatic)
             }
         }
     }
