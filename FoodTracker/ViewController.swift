@@ -28,12 +28,20 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         // Handle the text field's user input through delegate callbacks
         nameTextField.delegate = self
-        updateSaveButtonState()
         
+        
+        if let meal = meal {
+            navigationItem.title = meal.name
+            nameTextField.text = meal.name
+            photoImageView.image = meal.photo
+            ratingControl.rating = meal.rating
+        }
+        
+        // Enable the Save button only if the text field has a valid Meal name
+        updateSaveButtonState()
     }
     
     //Mark: UITextFieldDelegate
@@ -93,7 +101,19 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
+        // Depending on the style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways
+        let isPresentingInAddMode = presentingViewController is UINavigationController
+        
+        if isPresentingInAddMode {
         dismiss(animated: true, completion: nil)
+        }
+            
+        else if let owningNavigationController = navigationController{
+            owningNavigationController.popViewController(animated: true)
+        }
+        else {
+            fatalError("The MealViewController is not inside a navigation controller")
+        }
     }
     
     // MARK: Actions
