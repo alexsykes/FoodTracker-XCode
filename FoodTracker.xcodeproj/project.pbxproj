@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA27C15723FD1B7700F94196 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27C15623FD1B7700F94196 /* Meal.swift */; };
 		FAFD0CF523FA85160065077E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD0CF423FA85160065077E /* AppDelegate.swift */; };
 		FAFD0CF723FA85160065077E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD0CF623FA85160065077E /* SceneDelegate.swift */; };
 		FAFD0CF923FA85160065077E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD0CF823FA85160065077E /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA27C15623FD1B7700F94196 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		FAFD0CF123FA85160065077E /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFD0CF423FA85160065077E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFD0CF623FA85160065077E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				FAFD0CF423FA85160065077E /* AppDelegate.swift */,
 				FAFD0CF623FA85160065077E /* SceneDelegate.swift */,
 				FAFD0CF823FA85160065077E /* ViewController.swift */,
+				FA27C15623FD1B7700F94196 /* Meal.swift */,
 				FAFD0D1823FBF6280065077E /* RatingControl.swift */,
 				FAFD0CFA23FA85160065077E /* Main.storyboard */,
 				FAFD0CFD23FA85170065077E /* Assets.xcassets */,
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA27C15723FD1B7700F94196 /* Meal.swift in Sources */,
 				FAFD0D1923FBF6280065077E /* RatingControl.swift in Sources */,
 				FAFD0CF923FA85160065077E /* ViewController.swift in Sources */,
 				FAFD0CF523FA85160065077E /* AppDelegate.swift in Sources */,
