@@ -14,6 +14,7 @@
 		FAFD0CFE23FA85170065077E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFD0CFD23FA85170065077E /* Assets.xcassets */; };
 		FAFD0D0123FA85170065077E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFD0CFF23FA85170065077E /* LaunchScreen.storyboard */; };
 		FAFD0D0C23FA85170065077E /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD0D0B23FA85170065077E /* FoodTrackerTests.swift */; };
+		FAFD0D1923FBF6280065077E /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD0D1823FBF6280065077E /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		FAFD0D0723FA85170065077E /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFD0D0B23FA85170065077E /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		FAFD0D0D23FA85170065077E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFD0D1823FBF6280065077E /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				FAFD0CF423FA85160065077E /* AppDelegate.swift */,
 				FAFD0CF623FA85160065077E /* SceneDelegate.swift */,
 				FAFD0CF823FA85160065077E /* ViewController.swift */,
+				FAFD0D1823FBF6280065077E /* RatingControl.swift */,
 				FAFD0CFA23FA85160065077E /* Main.storyboard */,
 				FAFD0CFD23FA85170065077E /* Assets.xcassets */,
 				FAFD0CFF23FA85170065077E /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFD0D1923FBF6280065077E /* RatingControl.swift in Sources */,
 				FAFD0CF923FA85160065077E /* ViewController.swift in Sources */,
 				FAFD0CF523FA85160065077E /* AppDelegate.swift in Sources */,
 				FAFD0CF723FA85160065077E /* SceneDelegate.swift in Sources */,
