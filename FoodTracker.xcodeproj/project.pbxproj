@@ -161,6 +161,7 @@
 				TargetAttributes = {
 					FAFD0CF023FA85160065077E = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					FAFD0D0623FA85170065077E = {
 						CreatedOnToolsVersion = 11.3.1;
