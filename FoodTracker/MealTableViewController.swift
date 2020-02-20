@@ -62,15 +62,11 @@ class MealTableViewController: UITableViewController {
         return cell
     }
     
-    
-    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    
-    
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -83,7 +79,6 @@ class MealTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    
     
     /*
      // Override to support rearranging the table view.
@@ -177,13 +172,14 @@ class MealTableViewController: UITableViewController {
         meals += [meal1, meal2, meal3]
     }
     
+    // TODO : Update deprecated method
     private func saveMeals() {
+       // let isSuccessfulSave = NSKeyedArchiver.archivedData(withRootObject: meals, requiringSecureCoding: false)
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(meals, toFile: Meal.ArchiveURL.path)
         
         if isSuccessfulSave {
             os_log("Meals successfully saved", log: OSLog.default, type: .debug) }
-        else {
-            
+        else {            
             os_log("Failed to save meals…", log: OSLog.default, type: .error)
         }
     }
